@@ -7,5 +7,5 @@ find_package(Boost 1.53.0 COMPONENTS random REQUIRED)
 
 add_library(aliasMethod STATIC aliasMethod.h aliasMethod.cpp)
 target_include_directories(aliasMethod PRIVATE ${Boost_INCLUDE_DIRS})
-target_include_directories(aliasMethod PUBLIC ${PROJECT_SOURCE_DIR}/aliasMethod)
+target_include_directories(aliasMethod PUBLIC ${PROJECT_SOURCE_DIR})
 export(TARGETS aliasMethod FILE aliasMethodConfig.cmake)
